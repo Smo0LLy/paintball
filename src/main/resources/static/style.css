@@ -1,0 +1,141 @@
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #a1b2c3;
+    color: #333;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/static/body_img.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#services{
+    background-image: url('/static/splat_img.jpg'); /* Устанавливаем фоновое изображение */
+    background-size: cover; /* Масштабируем изображение, чтобы оно покрывало весь элемент */
+    background-position: center; /* Центрируем изображение */
+    background-repeat: no-repeat; /* Отключаем повторение изображения */
+}
+
+#about{
+    background-image: url('/static/splat_img.jpg'); /* Устанавливаем фоновое изображение */
+    background-size: cover; /* Масштабируем изображение, чтобы оно покрывало весь элемент */
+    background-position: center; /* Центрируем изображение */
+    background-repeat: no-repeat; /* Отключаем повторение изображения */
+}
+
+#contact{
+    background-image: url('/static/splat_img.jpg'); /* Устанавливаем фоновое изображение */
+    background-size: cover; /* Масштабируем изображение, чтобы оно покрывало весь элемент */
+    background-position: center; /* Центрируем изображение */
+    background-repeat: no-repeat; /* Отключаем повторение изображения */
+}
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    margin-top: 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+/* Стили для формы заказа */
+#order-form{
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/static/splat_img.jpg'); /* Устанавливаем фоновое изображение */
+    background-size: cover; /* Масштабируем изображение, чтобы оно покрывало весь элемент */
+    background-position: center; /* Центрируем изображение */
+    background-repeat: no-repeat; /* Отключаем повторение изображения */
+
+}
+
+#order-form form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#order-form label {
+    margin-top: 10px;
+}
+
+#order-form input, #order-form button {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#order-form button {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+#order-form button:hover {
+    background-color: #555;
+}

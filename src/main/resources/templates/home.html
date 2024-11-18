@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пейнтбольный клуб "Омега"</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/static/style.css}">
+</head>
+<body>
+<header>
+    <h1>Пейнтбольный клуб "Омега"</h1>
+    <nav>
+        <ul>
+            <li><a href="#about">О нас</a></li>
+            <li><a href="#services">Услуги</a></li>
+            <li><a href="#contact">Контакты</a></li>
+            <li><a th:href="@{/order}">Заказать игру</a></li>
+            <li><a th:href="@{/orders}">Список заказов</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="about">
+    <h2>О нас</h2>
+    <p>Добро пожаловать в пейнтбольный клуб "Омега" - место, где вы можете почувствовать себя настоящим солдатом! Наши поля для пейнтбола оборудованы по последнему слову техники, а профессиональные инструкторы помогут вам получить максимум удовольствия от игры.</p>
+</section>
+
+<section id="services">
+    <h2>Услуги</h2>
+    <ul>
+        <li>Аренда оборудования</li>
+        <li>Проведение корпоративов и дней рождений</li>
+        <li>Тренировочные программы</li>
+        <li>Продажа снаряжения</li>
+    </ul>
+</section>
+
+<section id="contact">
+    <h2>Контакты</h2>
+    <p>Адрес: г. Москва, ул. 26 Бакинских Комиссаров, д. 2, к. 2</p>
+    <p>Телефон: +7 (916) 275-82-00</p>
+    <p>Email: info@boevoyclub.ru</p>
+</section>
+
+<footer>
+    <p>&copy; 2024 Пейнтбольный клуб "Омега"</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Список заказов</title>
+  <link rel="stylesheet" type="text/css" th:href="@{/static/style.css}">
+</head>
+<body>
+<header>
+  <h1>Список заказов</h1>
+  <nav>
+    <ul>
+      <li><a th:href="@{/}">Главная</a></li>
+      <li><a th:href="@{/order}">Заказать игру</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section id="orders">
+  <h2>Заказы</h2>
+  <table>
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>Имя</th>
+      <th>Телефон</th>
+      <th>Дата</th>
+      <th>Время</th>
+      <th>Игроки</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="order : ${orders}">
+      <td th:text="${order.id}"></td>
+      <td th:text="${order.name}"></td>
+      <td th:text="${order.phone}"></td>
+      <td th:text="${order.date}"></td>
+      <td th:text="${order.time}"></td>
+      <td th:text="${order.players}"></td>
+      <td>
+        <form th:action="@{/order/delete/{id}(id=${order.id})}" method="post">
+          <button type="submit">Удалить</button>
+        </form>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</section>
+
+<footer>
+  <p>&copy; 2024 Пейнтбольный клуб "Омега"</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заказ принят</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/static/style.css}">
+</head>
+<body>
+<header>
+    <h1>Заказ принят</h1>
+    <nav>
+        <ul>
+            <li><a th:href="@{/}">Главная</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="order-result">
+    <h2>Спасибо за ваш заказ!</h2>
+    <p>Ваш заказ:</p>
+    <ul>
+        <li>Имя: <span th:text="${order.name}"></span></li>
+        <li>Телефон: <span th:text="${order.phone}"></span></li>
+        <li>Дата игры: <span th:text="${order.date}"></span></li>
+        <li>Время игры: <span th:text="${order.time}"></span></li>
+        <li>Количество игроков: <span th:text="${order.players}"></span></li>
+    </ul>
+</section>
+
+<footer>
+    <p>&copy; 2024 Пейнтбольный клуб "Омега"</p>
+</footer>
+</body>
+</html>
